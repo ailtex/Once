@@ -1,0 +1,16 @@
+<view class="container once-arounds-container">
+  <scroll-view class="once-arounds-scroll-view"
+  scroll-y
+  bindscrolltoupper="upper" 
+  bindscrolltolower="lower" 
+  bindscroll="scroll" 
+  scroll-top="{{scrollTop}}">
+    <view class="once-scroll-view-item" wx:for="{{posts}}" wx:key="id">
+      <image class="user-avatar" src="{{item.avatarUrl}}" mode="scaleToFill"></image>
+      <view class="once-view-post">
+        <view class="user-name"><text >{{item.nickName}}</text></view>
+        <view  class="user-msg"><text>{{item.message}}</text></view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

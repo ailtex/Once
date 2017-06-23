@@ -1,0 +1,30 @@
+.once-arounds-scroll-view {
+  width: 100%;
+  height: 1500rpx;
+  padding: 16rpx 16rpx;
+}
+
+.once-scroll-view-item {
+  min-height: 100rpx;
+  margin: 16rpx 16rpx;
+  padding: 16rpx 16rpx;
+  display: flex;
+}
+
+.once-scroll-view-item .user-avatar {
+  width: 96rpx;
+  height: 96rpx;
+  margin: 20rpx;
+}
+
+.once-scroll-view-item .once-view-post {
+  /*display: flex;*/
+  flex-direction: column;
+  width: 580rpx;
+  margin: 20rpx 0;
+}
+
+.once-scroll-view-item .once-view-post .user-msg {
+  width: 100%;
+  font-size: 28rpx;
+}

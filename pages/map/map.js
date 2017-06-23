@@ -13,18 +13,6 @@ Page({
       height: 50,
       alpha: 0.1
     }],
-    polyline: [{
-      points: [{
-        longitude: 113.3245211,
-        latitude: 23.10229
-      }, {
-        longitude: 113.324520,
-        latitude: 23.21229
-      }],
-      color: "#FF0000DD",
-      width: 2,
-      dottedLine: true
-    }],
     controls: [{
       id: 10000,
       iconPath: '/resources/ic_control_point_black_24px.svg',
@@ -64,6 +52,12 @@ Page({
     console.log(e.markerId)
   },
   controltap(e) {
+    console.log(e.controlId)
+    if (e.controlId === 10000) {
+      wx.navigateTo({
+        url: '../arounds/arounds'
+      })
+    }
     if (e.controlId === 10002) {
       var that = this
       wx.getLocation({
