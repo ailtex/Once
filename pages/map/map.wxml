@@ -1,0 +1,13 @@
+<view class="container once-map-container">
+<map id="map" 
+  longitude="{{myLocation.longitude}}" 
+  latitude="{{myLocation.latitude}}" 
+  scale="15" 
+  controls="{{controls}}" 
+  bindcontroltap="controltap" 
+  markers="{{markers}}" 
+  bindmarkertap="markertap" 
+  polyline="{{polyline}}" 
+  bindregionchange="regionchange" 
+  show-location></map>
+</view>
