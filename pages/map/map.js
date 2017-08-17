@@ -15,7 +15,7 @@ Page({
     }],
     controls: [{
       id: 10000,
-      iconPath: '/resources/ic_control_point_black_24px.svg',
+      iconPath: '/resources/ic_control_point_3x.png',
       position: {
         left: 320,
         top: 600 - 50,
@@ -25,7 +25,7 @@ Page({
       clickable: true
     }, {
       id: 10001,
-      iconPath: '/resources/ic_add_a_photo_black_24px.svg',
+      iconPath: '/resources/ic_add_a_photo_3x.png',
       position: {
         left: 320,
         top: 600 - 100,
@@ -35,7 +35,7 @@ Page({
       clickable: true
     }, {
       id: 10002,
-      iconPath: '/resources/ic_my_location_black_24px.svg',
+      iconPath: '/resources/ic_my_location_3x.png',
       position: {
         left: 0,
         top: 600 - 50,

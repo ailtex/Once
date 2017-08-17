@@ -1,9 +1,8 @@
 <view class="container once-arounds-container">
   <scroll-view class="once-arounds-scroll-view"
-  scroll-y
   bindscrolltoupper="upper" 
   bindscrolltolower="lower" 
-  bindscroll="scroll" 
+  bindscroll="scroll"
   scroll-top="{{scrollTop}}">
     <view class="once-scroll-view-item" wx:for="{{posts}}" wx:key="id">
       <image class="user-avatar" src="{{item.avatarUrl}}" mode="scaleToFill"></image>

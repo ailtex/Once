@@ -1,6 +1,9 @@
+.once-arounds-container {
+  padding: 0;
+}
 .once-arounds-scroll-view {
   width: 100%;
-  height: 1500rpx;
+  /*height: 1500rpx;*/
   padding: 16rpx 16rpx;
 }
 
@@ -8,7 +11,7 @@
   min-height: 100rpx;
   margin: 16rpx 16rpx;
   padding: 16rpx 16rpx;
-  display: flex;
+  display: inline-flex;
 }
 
 .once-scroll-view-item .user-avatar {
@@ -18,10 +21,15 @@
 }
 
 .once-scroll-view-item .once-view-post {
-  /*display: flex;*/
+  display: flex;
   flex-direction: column;
-  width: 580rpx;
-  margin: 20rpx 0;
+  width: 75%;
+  margin: 20rpx 20rpx;
+}
+
+.once-scroll-view-item .once-view-post .user-name {
+  font-size: 28rpx;
+  margin-bottom:14rpx;
 }
 
 .once-scroll-view-item .once-view-post .user-msg {
