@@ -13,6 +13,11 @@ Page({
       url: '../map/map'
     })
   },
+  bindSampleTap: function() {
+    wx.navigateTo({
+      url: '../../example/index',
+    })
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this

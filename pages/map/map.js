@@ -5,17 +5,17 @@ Page({
       longitude: 113.324520
     },
     markers: [{
-      iconPath: "/resources/ic_person_pin_circle_black_24px.svg",
+      // iconPath: "/resources/ic_person_pin_circle_black_24px.svg",
       id: 0,
       latitude: 23.099994,
       longitude: 113.324520,
       width: 50,
       height: 50,
-      alpha: 0.1
+      alpha: 0.3
     }],
     controls: [{
       id: 10000,
-      iconPath: '/resources/ic_control_point_3x.png',
+      iconPath: '/resources/ic_control_point_black_24px.svg',
       position: {
         left: 320,
         top: 600 - 50,
@@ -56,6 +56,11 @@ Page({
     if (e.controlId === 10000) {
       wx.navigateTo({
         url: '../arounds/arounds'
+      })
+    }
+    if (e.controlId === 10001) {
+      wx.navigateTo({
+        url: '../post/post',
       })
     }
     if (e.controlId === 10002) {
