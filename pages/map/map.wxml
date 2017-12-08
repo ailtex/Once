@@ -1,13 +1,37 @@
 <view class="container once-map-container">
-  <map id="map" 
-    longitude="{{myLocation.longitude}}" 
-    latitude="{{myLocation.latitude}}" 
-    scale="15" 
-    controls="{{controls}}" 
-    bindcontroltap="controltap" 
-    markers="{{markers}}" 
-    bindmarkertap="markertap" 
-    polyline="{{polyline}}" 
-    bindregionchange="regionchange" 
-    show-location></map>
+    <map id="map" longitude="{{myLocation.longitude}}" latitude="{{myLocation.latitude}}" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange"
+        show-location>
+
+        <cover-view class="once-map-cover">
+            <cover-view class="once-map-container__message">
+                <cover-view class="weui-panel">
+                    <!-- <cover-view class="weui-panel__hd">文字列表附来源</cover-view> -->
+                    <cover-view class="weui-panel__bd">
+                        <cover-view class="weui-media-box weui-media-box_text">
+                            <cover-view class="weui-media-box__title weui-media-box__title_in-text">Ailtex</cover-view>
+                            <cover-view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</cover-view>
+                            <cover-view class="weui-media-box__info">
+                                <!-- <cover-view class="weui-media-box__info__meta">POST</cover-view> -->
+                                <cover-view class="weui-media-box__info__meta">2017－12-10 10:11:12</cover-view>
+                                <!-- <cover-view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</cover-view> -->
+                            </cover-view>
+                        </cover-view>
+                    </cover-view>
+                </cover-view>
+            </cover-view>
+            
+
+            <!-- <cover-view class="play" bindtap="play">
+                <cover-image class="img" src="/path/to/icon_play" />
+            </cover-view> -->
+
+
+            <!-- <cover-view class="pause" bindtap="pause">
+                <cover-image class="img" src="/path/to/icon_pause" />
+            </cover-view> -->
+
+            <!-- <cover-view class="time">00:00</cover-view> -->
+
+        </cover-view>
+    </map>
 </view>
